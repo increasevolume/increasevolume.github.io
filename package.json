@@ -1,0 +1,32 @@
+{
+  "name": "increasevolume.github.io",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Increase Audio Volume Online | Free MP3 Volume Booster (100% Client-Side)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/tailwind": "^5.1.2",
+    "@breezystack/lamejs": "^1.2.7",
+    "@vite-pwa/astro": "latest",
+    "astro": "^4.16.18",
+    "lamejs": "^1.2.1",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.7.2"
+  }
+}

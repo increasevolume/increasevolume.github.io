@@ -1,0 +1,20 @@
+---
+import BoosterLandingPage from '../../components/BoosterLandingPage.astro';
+import type { LangCode } from '../../i18n/translations';
+
+export function getStaticPaths() {
+  const locales: LangCode[] = ['es', 'pt', 'de', 'fr', 'ja', 'zh', 'ru'];
+  return locales.map((lang) => ({
+    params: { lang },
+    props: { lang },
+  }));
+}
+
+interface Props {
+  lang: LangCode;
+}
+
+const { lang } = Astro.props;
+---
+
+<BoosterLandingPage lang={lang} />

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#202734"/>
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#B7D894" stroke-width="12" stroke-opacity="0.35"/>
+  <!-- Equalizer / Volume Booster Bars -->
+  <rect x="88" y="248" width="40" height="140" rx="20" fill="#E0F8C7"/>
+  <rect x="156" y="180" width="40" height="208" rx="20" fill="#B7D894"/>
+  <rect x="224" y="108" width="44" height="280" rx="22" fill="#B7D894"/>
+  <rect x="296" y="156" width="40" height="232" rx="20" fill="#B7D894"/>
+  <rect x="364" y="96" width="44" height="292" rx="22" fill="#E0F8C7"/>
+  <!-- +500% Boost Arrow Badge -->
+  <circle cx="400" cy="116" r="56" fill="#B7D894" stroke="#202734" stroke-width="12"/>
+  <path d="M400 88v56M372 116h56" stroke="#202734" stroke-width="14" stroke-linecap="round"/>
+</svg>

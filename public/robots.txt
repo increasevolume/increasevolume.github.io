@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://increasevolume.github.io/sitemap-index.xml
