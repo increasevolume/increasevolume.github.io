@@ -1056,17 +1056,17 @@ export default function AudioBoosterIsland({ dropzone, studio }: Props) {
           </div>
 
           {/* 4. Output Format Selector (.MP3 or .WAV) + Giant Download Boosted Audio CTA */}
-          <div className="pt-2 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-5">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between lg:justify-start gap-3">
-              <span className="text-base sm:text-lg md:text-xl font-extrabold text-midnight-navy dark:text-mint-cream shrink-0">
+          <div className="pt-2 flex flex-col md:flex-row md:flex-wrap items-stretch md:items-center justify-between gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 shrink-0">
+              <span className="text-base sm:text-lg font-extrabold text-midnight-navy dark:text-mint-cream whitespace-nowrap">
                 {t.studio.outputFormatLabel}:
               </span>
-              <div className="grid grid-cols-2 sm:inline-flex rounded-2xl p-1.5 bg-mint-cream dark:bg-midnight-navy border-2 border-midnight-navy/20 dark:border-mint-cream/20">
+              <div className="grid grid-cols-2 sm:inline-flex w-full sm:w-auto rounded-2xl p-1.5 bg-mint-cream dark:bg-midnight-navy border-2 border-midnight-navy/20 dark:border-mint-cream/20 shrink-0">
                 <button
                   type="button"
                   onClick={() => setOutputFormat('mp3')}
                   aria-pressed={outputFormat === 'mp3'}
-                  className={`min-h-[46px] px-4 sm:px-5 py-2 rounded-xl font-extrabold text-sm sm:text-base md:text-lg whitespace-nowrap transition-all ${
+                  className={`min-h-[44px] px-4 py-2 rounded-xl font-extrabold text-sm sm:text-base whitespace-nowrap transition-all ${
                     outputFormat === 'mp3'
                       ? 'bg-midnight-navy dark:bg-sage-lime text-mint-cream dark:text-midnight-navy shadow'
                       : 'text-midnight-navy dark:text-mint-cream hover:opacity-80'
@@ -1078,7 +1078,7 @@ export default function AudioBoosterIsland({ dropzone, studio }: Props) {
                   type="button"
                   onClick={() => setOutputFormat('wav')}
                   aria-pressed={outputFormat === 'wav'}
-                  className={`min-h-[46px] px-4 sm:px-5 py-2 rounded-xl font-extrabold text-sm sm:text-base md:text-lg whitespace-nowrap transition-all ${
+                  className={`min-h-[44px] px-4 py-2 rounded-xl font-extrabold text-sm sm:text-base whitespace-nowrap transition-all ${
                     outputFormat === 'wav'
                       ? 'bg-midnight-navy dark:bg-sage-lime text-mint-cream dark:text-midnight-navy shadow'
                       : 'text-midnight-navy dark:text-mint-cream hover:opacity-80'
@@ -1089,25 +1089,23 @@ export default function AudioBoosterIsland({ dropzone, studio }: Props) {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 flex-1 lg:justify-end">
-              <button
-                type="button"
-                onClick={handleExportBoostedAudio}
-                disabled={isExporting}
-                className="w-full lg:w-auto relative overflow-hidden min-h-[62px] px-7 py-4 sm:py-5 rounded-2xl bg-midnight-navy dark:bg-sage-lime text-mint-cream dark:text-midnight-navy text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight shadow-xl hover:shadow-[0_0_28px_rgba(183,216,148,0.85)] hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-3 disabled:opacity-75"
-              >
-                {isExporting && (
-                  <span
-                    style={{ width: `${exportProgress}%` }}
-                    className="absolute left-0 top-0 bottom-0 bg-sage-lime/35 dark:bg-midnight-navy/25 transition-all duration-150"
-                  />
-                )}
-                <Download className="w-6 h-6 sm:w-7 sm:h-7 shrink-0 relative z-10" aria-hidden="true" />
-                <span className="relative z-10 truncate">
-                  {isExporting ? `${statusMessage} (${exportProgress}%)` : t.studio.downloadButton}
-                </span>
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={handleExportBoostedAudio}
+              disabled={isExporting}
+              className="w-full md:w-auto shrink-0 relative overflow-hidden min-h-[58px] px-7 py-4 rounded-2xl bg-midnight-navy dark:bg-sage-lime text-mint-cream dark:text-midnight-navy text-lg md:text-xl font-extrabold tracking-tight shadow-xl hover:shadow-[0_0_28px_rgba(183,216,148,0.85)] hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-3 disabled:opacity-75"
+            >
+              {isExporting && (
+                <span
+                  style={{ width: `${exportProgress}%` }}
+                  className="absolute left-0 top-0 bottom-0 bg-sage-lime/35 dark:bg-midnight-navy/25 transition-all duration-150"
+                />
+              )}
+              <Download className="w-6 h-6 shrink-0 relative z-10" aria-hidden="true" />
+              <span className="relative z-10 whitespace-nowrap">
+                {isExporting ? `${statusMessage} (${exportProgress}%)` : t.studio.downloadButton}
+              </span>
+            </button>
           </div>
         </div>
       )}
