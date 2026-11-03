@@ -14,9 +14,9 @@ Amplify quiet **MP3, WAV, M4A, FLAC, OGG, and AAC** recordings up to **500% (+14
 [![Web Audio API](https://img.shields.io/badge/DSP_Engine-Web_Audio_API-B7D894?style=for-the-badge&logo=html5&logoColor=202734)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 [![PWA Ready](https://img.shields.io/badge/PWA-100%25_Offline_Ready-36415A?style=for-the-badge&logo=pwa&logoColor=E0F8C7)](https://increasevolume.github.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-202734?style=for-the-badge&color=202734)](./LICENSE)
-[![Support on Ko-fi](https://img.shields.io/badge/Support_Developer-Ko--fi-B7D894?style=for-the-badge&logo=kofi&logoColor=202734)](https://ko-fi.com/kishara)
+[![Support the Developer](https://img.shields.io/badge/Support_the_Developer-Buy_Me_a_Coffee-B7D894?style=for-the-badge&logo=gumroad&logoColor=202734)](https://kisharadilshan.gumroad.com/coffee)
 
-[**Launch Live Studio**](https://increasevolume.github.io/) · [**Report a Bug**](https://github.com/increasevolume/increasevolume.github.io/issues) · [**Request a Feature**](https://github.com/increasevolume/increasevolume.github.io/issues) · [**Support on Ko-fi**](https://ko-fi.com/kishara)
+[**Launch Live Studio**](https://increasevolume.github.io/) · [**Report a Bug**](https://github.com/increasevolume/increasevolume.github.io/issues) · [**Request a Feature**](https://github.com/increasevolume/increasevolume.github.io/issues) · [**Support the Developer**](https://kisharadilshan.gumroad.com/coffee)
 
 </div>
 
@@ -254,11 +254,11 @@ This repository includes a turnkey GitHub Actions workflow ([`.github/workflows/
 
 ## Supporting the Project
 
-**IncreaseVolume** is 100% free, ad-free, and open-source. If this tool helped you rescue a quiet recording, lecture, or podcast, you can support ongoing development on Ko-fi:
+**IncreaseVolume** is 100% free, ad-free, and open-source. If this tool helped you rescue a quiet recording, lecture, or podcast, you can support ongoing development here:
 
 <div align="center">
 
-[![Support the Developer on Ko-fi](https://img.shields.io/badge/☕_Support_the_Developer_on_Ko--fi-kishara-B7D894?style=for-the-badge&logo=kofi&logoColor=202734)](https://ko-fi.com/kishara)
+[![Support the Developer](https://img.shields.io/badge/☕_Support_the_Developer-Buy_Me_a_Coffee-B7D894?style=for-the-badge&logo=gumroad&logoColor=202734)](https://kisharadilshan.gumroad.com/coffee)
 
 </div>
 
